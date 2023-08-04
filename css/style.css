@@ -1,0 +1,195 @@
+* {
+    margin: 0 auto; 
+    padding: 0;
+
+}
+a{
+    /* 하이퍼링크에 밑줄 */
+    text-decoration-line:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+li{
+    /* list 에서 점없애줌 */
+    list-style-type: none;
+}
+
+/*  */
+#container{
+    position:relative;
+    width:1200px;
+    margin:20px auto;
+    box-sizing: border-box;
+}
+/*  */
+header{
+    padding: 5px;
+    height: 130px;
+    background-color: #202009;
+
+}
+h1 img { 
+    display : block;
+    padding-top: 20px;
+    margin : auto;
+}
+/*  */
+nav{
+    padding: 5px;
+    background-color: #202009;
+    text-align: center;    /* nav안에 있는거 센터 */
+}
+nav ul li{
+    display: inline-block;
+    letter-spacing: 20px;
+    margin: 10px; 
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    text-transform:uppercase;
+}
+nav ul li ul li{
+    border-bottom: 1px solid white;
+}
+.menu{
+    position:relative;
+    width: 200px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+}
+.submenu{
+    background-color: #202009;
+    position:absolute;
+    z-index:998;
+    width:100%;
+    display: none;
+}
+
+/*  *//* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow{
+    display: block;
+    width: 1200px;
+    height: 561px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;   
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+}
+.slides{
+    padding-top: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3700px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out; 
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+}
+
+/* 첫 번째 슬라이드 가운데에 정렬하기위해
+  첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child{
+    margin-left: 100px;
+}
+
+  /* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child){
+    float: left;
+    margin-right: 200px;
+}
+
+.slides li{
+    float: left;
+}
+
+.controller span{
+    position:absolute;
+    background-color: transparent;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+.prev{
+    left: 10px;
+}
+
+/* 이전 화살표에 마우스 커서가 올라가 있을때 
+이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover{
+    transform: translateX(-10px);
+}
+
+.next{
+    right: 10px;
+}
+
+/* 다음 화살표에 마우스 커서가 올라가 있을때 
+이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover{
+    transform: translateX(10px);
+}
+
+/*  */
+#contents{
+    background-color: rgb(233, 233, 233);
+    width:100%;   /* 너비 */
+}
+h3{
+    text-align: center;
+    margin: 25px \;
+}
+#contents ul{
+    margin: 30px 25px 25px 25px;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid black ;
+    border-radius: 10%;
+}
+#contents ul li{
+    list-style-type: square;
+    padding: 5px;
+}
+#main{
+    float: left;
+    width: 33%;
+    /* background-color: aqua; */
+    height: 400px;
+    display: block;
+    overflow: hidden;  
+}
+#main2{
+    float: right;
+    width: 33%;
+    /* background-color: violet; */
+    height: 400px;
+    display: block;
+    overflow: hidden;  
+}
+#main3{
+    width: 33%;
+    /* background-color: gray; */
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;  
+}
+
+footer{
+    clear: both;
+    height: 100px;
+    background-color: #202009;
+}
