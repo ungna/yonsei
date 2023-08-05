@@ -1,0 +1,4 @@
+git checkout branch-name =>내 branch 이름 확인
+
+git branch -m 이름  => 내가 원하는 이름으로 확인
+
