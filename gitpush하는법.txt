@@ -1,3 +1,6 @@
-git remote add https://github.com/ungna/yonsei.git
-git branch -M main
-git push -u origin main
+git remote add origin 주소
+=> 내가 github의 repository를 연결할거다 이름은 origin이다
+
+git pull origin main(master)
+=> 내가 연결할 주소에서 main(master)라는 이름의 branch를 가지고옴
+
