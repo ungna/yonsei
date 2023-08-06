@@ -192,4 +192,42 @@ footer{
     clear: both;
     height: 100px;
     background-color: #202009;
+    
+}
+
+#footerMenu{
+    color: rgb(240, 240, 240);
+    margin-left: 20px;
+    font-size: small;
+}
+#footerMenu li{
+    display: inline-block;
+    letter-spacing: 10px;
+    margin-top: 15px; 
+}
+#footerMenu li:before {
+    /* li 사이에 줄 넣는거 */
+    display: block;
+    content: "";
+    float: right;
+    width: 2px;
+    height: 13px;
+    margin: 4px 10px 0 0;
+    background-color: #b5b5b9;
+}
+#footerId{
+    color: rgb(148, 149, 150);
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: small;
+}
+#footerSNS{
+    float: right;
+}
+#footerSNS img{
+    float: right;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
 }
