@@ -1,5 +1,8 @@
 git init안하고 git clone 주소 하면됨
 
+https://oddcode.tistory.com/99
+
+
 git clone은 비교적 간단하게 사용할 수 있는 명령어입니다만, 예상치 못 하게 클론에 실패하는 경우가 있습니다. 다음과 같이 실패한 경우를 생각해보겠습니다.
 
 $ git clone https://github.com/lainyzine/git-clone.git
