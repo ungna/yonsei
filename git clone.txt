@@ -1,0 +1,7 @@
+git init안하고 git clone 주소 하면됨
+
+git clone은 비교적 간단하게 사용할 수 있는 명령어입니다만, 예상치 못 하게 클론에 실패하는 경우가 있습니다. 다음과 같이 실패한 경우를 생각해보겠습니다.
+
+$ git clone https://github.com/lainyzine/git-clone.git
+fatal: destination path 'git-clone' already exists and is not an empty directory.
+메시지를 읽어보시면 git-clone 디렉터리가 이미 존재해서, git clone 명령어가 실패합니다. 이는 git clone 할 때 명령어가 자동적으로 저장소 이름([REPOSITIORY_NAME]) 디렉터리에 복제를 시도하기 때문입니다. 이 문제를 해결하려면 이미 존재하는 디렉터리를 삭제하거나, 다른 디렉터리로 클론을 하면 됩니다. 
