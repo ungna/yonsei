@@ -8,3 +8,6 @@ git pull origin main(master) branch이름이 main인지 master인지 잘보고 �
 
 github 사용법
 https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html
+
+마지막 commit한거 수정하는법:
+ git commit --amend -m "~"    (기존에 했던 커밋을 취소하고 다시 작성하는거)
