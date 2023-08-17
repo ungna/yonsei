@@ -1,0 +1,38 @@
+#github 기본 사용법
+https://woongchoi84.github.io/2020/01/15/post-productive-howtousegithub.html
+
+기본적으로 로컬에서 작업 -> 업로드 -> 다운로드 이 순서대로 반복
+
+#github기본제공 
+echo "# Test0816" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ungna/Test0816.git
+git push -u origin main
+
+
+#마지막 commit한거 수정하는법:
+git commit --amend -m "~"    (마지막에 했던 커밋을 취소하고 다시 작성하는거)
+
+#브랜치 만드는법:
+git branch 브랜치이름
+git checkout -b 브랜치이름   --> 만들고 이동함
+
+#브랜치 이동:
+git checkout master
+
+#브랜치 머지:  메인으로 가서
+git merge 합칠브랜치이름
+
+#병합취소:
+git merge --abort   --> 병합 진행중 중지 (보통 conflict가 일어난다고 경고나오면)
+git reset --merge ORIG_HEAD   -->병합 완료 후 취소(이전으로 되돌림)
+
+
+#브랜치 삭제:
+git branch -d 브랜치이름   --> 병합된다
+git branch -D 브랜치이름   --> 병합 안되도 삭제
+
+

@@ -1,0 +1,9 @@
+git remote add origin 주소
+=> 내가 github의 repository를 연결할거다 이름은 origin이다
+
+git pull origin main(master) branch이름이 main인지 master인지 잘보고 홈페이지껄로 적어야됨
+=> 내가 연결할 주소에서 main(master)라는 이름의 branch를 가지고옴
+
+
+빈폴더가 아니라 다른 내용의 폴더가 있는 상태에서 pull을 하면은 신규로 만든 파일과 기존에 있는 프로젝트는 같은 조상을 두고 있지 않아서 서로 다른 프로젝트라고 인식 함(refusing to merge unrelated histories 로 pull 실패). 따라서 독립적인 두 프로젝트를 병합하려면 --allow-unrelated-histories를 사용해야 함.
+=>git pull origin 브런치명 --allow-unrelated-histories 
