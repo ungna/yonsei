@@ -1,4 +1,4 @@
-git checkout branch-name =>내 branch 이름 확인하는거
+git checkout branch-name =>branch-name으로 이동
 
 git branch -m 이름  => 내가 원하는 이름으로 확인
 
