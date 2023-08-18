@@ -35,6 +35,10 @@ git reset --merge ORIG_HEAD   -->병합 완료 후 취소(이전으로 되돌림
 git branch -d 브랜치이름   --> 병합된다
 git branch -D 브랜치이름   --> 병합 안되도 삭제
 
+##remote 브랜치 삭제:
+git push remote이름 -d 브랜치이름
+https://www.freecodecamp.org/korean/news/git-delete-local-or-remote-branch/
+
 #add commit push 해제
 https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
 
