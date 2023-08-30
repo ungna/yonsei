@@ -8,3 +8,12 @@ git pull origin main(master) branch이름이 main인지 master인지 잘보고 �
 #빈폴더가 아니라 다른 내용의 폴더가 있는 상태에서 pull을 하면은 신규로 만든 파일과 기존에 있는 프로젝트는 같은 조상을 두고 있지 않아서 서로 다른 프로젝트라고 인식 함(refusing to merge unrelated histories 로 pull 실패). 
 #같은 프로젝트라도 history순으로 push가 안되고 꼬이면은 오류가 일어남
 ==>git pull origin 브런치명 --allow-unrelated-histories 
+
+
+# 원하는거만 pull하기
+git inint
+git config core.sparseCheckout true
+git remote add -f origin [repo URL]
+echo "[clone하고자 하는 폴더 경로]"> .git/info/sparse-checkout
+    ex) echo "images" >> .git/info/sparse-checkout
+git pull origin master
